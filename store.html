@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullscreen Embedded Website</title>
+    <style>
+        /* Full reset for body and html */
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+        }
+
+        /* Fullscreen iframe with custom scrollbar */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            overflow-y: scroll;
+        }
+
+        /* Custom thin scrollbar */
+        iframe::-webkit-scrollbar {
+            width: 8px; /* Adjust width as needed */
+        }
+        iframe::-webkit-scrollbar-thumb {
+            background-color: #888; /* Scrollbar color */
+            border-radius: 10px;
+        }
+        iframe::-webkit-scrollbar-thumb:hover {
+            background-color: #555; /* Color on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Fullscreen iframe pointing to your link -->
+    <iframe src="https://st-ecommerce-omega.vercel.app/" frameborder="0"></iframe>
+</body>
+</html>
